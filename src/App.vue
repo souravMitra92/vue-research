@@ -3,7 +3,7 @@
     <img src="./assets/logo.png">
       <nav>
         <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
+        <router-link to="/about/Sourav">About</router-link>
       </nav>
     <router-view/>
     </div>
@@ -50,5 +50,9 @@ nav a {
   color: rgb(0, 110, 255);
   font-weight: bold;
   margin-right: 15px;
+}
+
+.router-link-exact-active {
+  outline: 2px solid #719ECE;
 }
 </style>

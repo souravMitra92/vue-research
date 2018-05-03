@@ -1,6 +1,12 @@
 <template>
   <div class="hello">
     <h1>Welcome to Your Vue.js App - About Page</h1>
+    <h2>Name: {{url_name}}</h2>
+    <nav>
+      <router-link to="/">User</router-link>
+      <router-link to="/organization">Org</router-link>
+    </nav>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -9,6 +15,11 @@ export default {
   name: 'About',
   props: {
     msg: String
+  },
+  data() {
+    return {
+      url_name: this.$route.params.name
+    }
   }
 }
 </script>
